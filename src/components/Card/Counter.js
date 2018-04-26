@@ -17,10 +17,10 @@ class Counter extends React.Component {
         <div className="card-header bg-primary text-white">
           <h3 className="card-title">Score</h3>
         </div>
-        <FriendCard
+        {/* <FriendCard
           count={this.state.count}
           handleIncrement={this.handleIncrement}
-        />
+        /> */}
       </div>
     );
   }

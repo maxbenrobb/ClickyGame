@@ -14,7 +14,10 @@ class App extends Component {
   };
 
   handleIncrement = () => {
+    const friends = this.state.friends;
     this.setState({ count: this.state.count + 1 });
+    friends.sort(function(){return 0.5 - Math.random()});
+    this.setState({ friends });
     console.log(this.state.count);
   };
 

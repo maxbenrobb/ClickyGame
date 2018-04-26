@@ -4,7 +4,12 @@ import "./card.css";
 
 const FriendCard = props => (
   <div className="card">
-    <div onClick={() => props.handleIncrement()} className="img-container increment">
+    <div onClick={() => {
+      props.handleIncrement();
+      console.log("working")
+    }
+    
+      } className="img-container increment">
       <img alt={props.name} src={props.image} />
     </div>
   </div>
